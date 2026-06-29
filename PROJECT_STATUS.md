@@ -11,50 +11,59 @@ _Last updated: 2026-06-29_
 ## Current Production Stage
 
 - **Current Episode:** EP-001 (Pilot)
-- **Current Focus:** Record human scratch voice → lay into mp4 → Animatic Review (final)
-- **Next Milestone:** Animatic Review (final) → Children Test #001
+- **Current Focus:** Complete the Animatic Review checklist (human scratch voice outstanding)
+- **Next Milestone:** Animatic Review PASS → Children Test #001
 
 ---
 
 ## Current Quality Gate
 
 ```text
-Gate:    Animatic Review (final) — EP-001  [picture + voice together]
-Status:  BLOCKED
-Blocker: Human scratch voice not yet recorded/laid into the mp4.
+Gate:    Animatic Review (EP-001)
+Status:  IN REVIEW
 Owner:   Creative Director
 ```
 
-⚠️ **Do NOT start Children Test from the current voiceless mp4.** The picture/timing pass
-below is NOT a green light for testing with children. A child aged 2–3 cannot get the full
-experience without a human voice. Children Test waits for Animatic Review (final).
+A gate answers one question: can we go to the next stage? Right now — no. So the gate is
+simply **not yet passed**. (One gate, with a checklist — we do not split it into picture/
+sound/export gates; DEC-000 asks us to avoid proliferating gates.)
 
-### Picture/timing gate — Animatic Review (v1, picture only)
+### Animatic Review checklist
 ```text
-Gate:    Animatic Review (EP-001) — picture & timing only
-Status:  PASSED WITH COMMENTS
-Owner:   Creative Director
-Decided: Creative Director, 2026-06-29
+☑ Picture           — readable; schematic, fine for first review
+☑ Timing            — canonical STORY-001 timings
+☑ Interaction pauses — present and marked (panels 6, 8, 14)
+☑ Ambience balanced — ambience + simple music bed
+☐ Human scratch voice present
+☐ Final playback reviewed
+
+PASS only after every box is checked.
 ```
 
-Comments (accepted, not blocking the picture pass):
-1. Frames are readable but very schematic — fine for a first internal review.
-2. Without voice, a 2–3 y/o does not get the full experience.
-3. Ambience/music is better than silence, but **voice is critical** here.
+**Studio rule:** _An animatic must contain a human scratch voice before Children Test._
+(Any person may record it — founder, another person, a future actor, any studio member.
+The pipeline does not depend on a specific individual. No TTS.)
+
+⚠️ Do NOT start Children Test from the current voiceless mp4 — the voice box is unchecked.
+
+### Previous gates
+```text
+Storyboard Creative Review (EP-001): PASSED WITH MINOR COMMENTS · Creative Director, 2026-06-29
+```
+
+Picture/timing comments accepted (not blocking, recorded for the build):
+1. Frames readable but very schematic — fine for first internal review.
+2. Without voice a 2–3 y/o does not get the full experience.
+3. Ambience/music better than silence, but voice is critical here.
 4. Do not change STORY-001 over the first-30s question — Children Test will measure it.
-
-### Previous gate — Storyboard Creative Review (EP-001)
-```text
-Status: PASSED WITH MINOR COMMENTS  ·  Creative Director, 2026-06-29
-```
 
 ---
 
-## Open production sub-task (unblocks the final gate)
+## Open production sub-task (checks the outstanding box)
 
-- **Record human scratch voice** against `episodes/EP-001/animatic/VO-cue-sheet.md`
-  (plain human read, not acted; no TTS). Then Production lays it into the mp4 and sets
-  **Animatic Review (final)** to WAITING for the Creative Director.
+- **Record a human scratch voice** against `episodes/EP-001/animatic/VO-cue-sheet.md`
+  (plain human read, not acted; no TTS). Production then lays it into the mp4 and reviews
+  final playback — completing the last two checklist boxes.
 
 ---
 
@@ -64,7 +73,7 @@ Status: PASSED WITH MINOR COMMENTS  ·  Creative Director, 2026-06-29
 - **Storyboard v1 (passed w/ comments):** `episodes/EP-001/storyboard/STORY-001-ball-storyboard-v1.md`
 - **Interactive Storyboard (internal tool, NOT the animatic):** `episodes/EP-001/animatic/STORY-001-ball-animatic-v1.html`
   - ⚠️ to be renamed to a `*-storyboard-player-*` path to avoid confusion.
-- **Animatic v1 (real frames) — picture PASSED w/ comments; voice pending:** `episodes/EP-001/animatic/`
+- **Animatic v1 (real frames) — in review; voice box outstanding:** `episodes/EP-001/animatic/`
   - `render_frames.py`, `synth_audio.py`, `build_animatic.sh` → rebuild `STORY-001-ball-animatic-v1.mp4` (~4:55, voiceless)
   - `VO-cue-sheet.md` — RU lines + timecodes for human scratch voice
   - `README.md` — what it is, how to rebuild, gate, timings
@@ -73,7 +82,7 @@ Status: PASSED WITH MINOR COMMENTS  ·  Creative Director, 2026-06-29
 
 ---
 
-## Notes carried forward (verify on Animatic Review final)
+## Notes carried forward (verify before Animatic Review PASS)
 
 1. **Scene 4 (Max searches alone):** keep visually varied; trim toward ~15s if it drags. Do not cut the beat.
 2. **Three to-camera pauses (panels 6, 8, 14):** keep eye-line soft, not demanding.
@@ -97,8 +106,7 @@ Foundation / Canon (frozen)
 EP-001 Production
 ✅ Storyboard             — v1 canon-aligned, PASSED WITH MINOR COMMENTS
 ✅ Interactive Storyboard — HTML player (internal review tool)
-🟡 Animatic v1 (real frames) — picture/timing PASSED WITH COMMENTS; human voice PENDING
-⬜ Animatic Review (final)   — BLOCKED until voice is laid in
+🟡 Animatic v1 (real frames) — IN REVIEW; human scratch voice + final playback outstanding
 ⬜ Children Test          — not started
 ⬜ OBS                    — not started
 ⬜ Final                  — not started
@@ -109,7 +117,7 @@ EP-001 Production
 ## Pipeline position
 
 ```text
-Story ✅ → Storyboard ✅ → Interactive Storyboard ✅ → Animatic v1 picture 🟡 → (human voice) → Animatic Review (final) → Children Test → OBS → Production
+Story ✅ → Storyboard ✅ → Animatic Review (in review) → Children Test → OBS → Production
 ```
 
 ---
