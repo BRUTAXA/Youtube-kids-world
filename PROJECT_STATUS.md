@@ -11,8 +11,8 @@ _Last updated: 2026-06-29_
 ## Current Production Stage
 
 - **Current Episode:** EP-001 (Pilot)
-- **Current Focus:** Animatic v1 (EP-001)
-- **Next Milestone:** Animatic v1 → Animatic Review → Children Test #001
+- **Current Focus:** Animatic Review (EP-001)
+- **Next Milestone:** Animatic Review → Children Test #001
 
 ---
 
@@ -20,12 +20,12 @@ _Last updated: 2026-06-29_
 
 ```text
 Gate:    Animatic Review (EP-001)
-Status:  IN PROGRESS (Production building Animatic v1)
+Status:  WAITING FOR REVIEW
 Owner:   Creative Director
 ```
 
-When Animatic v1 is committed, this gate moves to WAITING (for Creative Director).
-Production never marks a gate Passed.
+Animatic v1 is committed and ready. Production cannot open this gate.
+Only the Creative Director marks it Passed.
 
 ### Previous gate — Storyboard Creative Review (EP-001)
 
@@ -36,41 +36,28 @@ Owner:   Creative Director
 Decided: Creative Director, 2026-06-29
 ```
 
-Storyboard v1 is canon-aligned and approved to proceed to animatic, carrying three
-minor comments (see Animatic Notes). No new Creative Review required for those comments;
-they are verified during animatic build.
-
 ---
 
 ## Active EP-001 Artifacts
 
 - **Story (canon, frozen):** `STORY/STORY-001_Where_Did_The_Ball_Hide.md` — «Куда спрятался мячик?»
 - **Storyboard v1 (passed w/ comments):** `episodes/EP-001/storyboard/STORY-001-ball-storyboard-v1.md`
-- **Animatic v1 (in progress):** `episodes/EP-001/animatic/STORY-001-ball-animatic-v1.html`
-- **Off-canon / non-active:** `episodes/EP-001/storyboard/STORY-LEAF-storyboard-v1.svg` (do not use unless a future DEC reopens canon)
+- **Animatic v1 (waiting review):** `episodes/EP-001/animatic/STORY-001-ball-animatic-v1.html`
+- **Off-canon / non-active:** `episodes/EP-001/storyboard/STORY-LEAF-storyboard-v1.svg`
 
 ---
 
-## Animatic Notes (carried from Creative Review — verify during build)
+## Animatic Notes (verify during Animatic Review)
 
-1. **Scene 4 (Max searches alone, 0:55–1:15):** emotionally needed but risks sagging
-   for ages 2–3. Keep it visually varied (different search spots); trim toward ~15s in
-   the animatic if it drags. Do not cut the beat itself.
-2. **Three to-camera interaction pauses (panels 6, 8, 14):** good for the age, but keep
-   the eye-line soft, not demanding. Confirm live on the animatic.
-3. **First-30-seconds risk is a STORY-001 question, NOT a storyboard fix.** The opening
-   ritual length (0:00–0:18) and the late hook (ball loss at 0:35) come from frozen
-   STORY-001 timecodes. **Do not "speed up" the opening by editing the storyboard — that
-   would rewrite canon through the back door.** Decision: keep canon timing as-is; let
-   **Children Test** measure whether attention holds in the first 30s. Only OBS evidence
+1. **Scene 4 (Max searches alone, 0:55–1:15):** emotionally needed but risks sagging for
+   ages 2–3. Built with two visible search spots; trim toward ~15s if it drags. Do not cut the beat.
+2. **Three to-camera interaction pauses (panels 6, 8, 14):** marked in the animatic; keep the
+   eye-line soft, not demanding. Confirm live.
+3. **First-30-seconds risk is a STORY-001 question, NOT a storyboard/animatic fix.** Opening
+   ritual length (0:00–0:18) and late hook (ball loss at 0:35) come from frozen STORY-001 timecodes.
+   Do not "speed up" by editing the artifacts — that would rewrite canon through the back door.
+   Decision: keep canon timing; let **Children Test** measure first-30s attention. Only OBS evidence
    may justify changing STORY-001.
-
----
-
-## Resolved Production Blocker (history)
-
-- Previous storyboard was off-canon (leaf/rain). Option A executed: a new storyboard was
-  built from frozen STORY-001 (ball) without changing canon. Leaf board kept as non-active.
 
 ---
 
@@ -88,7 +75,7 @@ Foundation / Canon (frozen)
 
 EP-001 Production
 ✅ Storyboard       — v1 canon-aligned, PASSED WITH MINOR COMMENTS
-🟡 Animatic         — v1 in progress
+🟡 Animatic         — v1 committed, AWAITING ANIMATIC REVIEW
 ⬜ Children Test    — not started
 ⬜ OBS              — not started
 ⬜ Final            — not started
@@ -99,7 +86,7 @@ EP-001 Production
 ## Pipeline position
 
 ```text
-Story ✅ → Storyboard ✅ → Animatic 🟡(building) → [Animatic Review] → Children Test → OBS → Production
+Story ✅ → Storyboard ✅ → Animatic ✅(v1, waiting review) → [Animatic Review] → Children Test → OBS → Production
 ```
 
 ---
