@@ -14,6 +14,11 @@ _Last updated: 2026-06-29_
 - **Current Focus:** Complete the Animatic Review checklist (human scratch voice outstanding)
 - **Next Milestone:** Animatic Review PASS → Children Test #001
 
+> Infrastructure is intentionally settled. From here the work is creative:
+> draw frames, record voice, watch with children, write OBS. Do not keep
+> reorganizing structure — when tempted to add a gate or a doc, prefer a
+> checklist item inside what already exists.
+
 ---
 
 ## Current Quality Gate
@@ -71,8 +76,7 @@ Picture/timing comments accepted (not blocking, recorded for the build):
 
 - **Story (canon, frozen):** `STORY/STORY-001_Where_Did_The_Ball_Hide.md` — «Куда спрятался мячик?»
 - **Storyboard v1 (passed w/ comments):** `episodes/EP-001/storyboard/STORY-001-ball-storyboard-v1.md`
-- **Interactive Storyboard (internal tool, NOT the animatic):** `episodes/EP-001/animatic/STORY-001-ball-animatic-v1.html`
-  - ⚠️ to be renamed to a `*-storyboard-player-*` path to avoid confusion.
+- **Storyboard Player (interactive, internal review tool):** `episodes/EP-001/storyboard/player/STORY-001-ball-storyboard-player-v1.html`
 - **Animatic v1 (real frames) — in review; voice box outstanding:** `episodes/EP-001/animatic/`
   - `render_frames.py`, `synth_audio.py`, `build_animatic.sh` → rebuild `STORY-001-ball-animatic-v1.mp4` (~4:55, voiceless)
   - `VO-cue-sheet.md` — RU lines + timecodes for human scratch voice
@@ -105,7 +109,7 @@ Foundation / Canon (frozen)
 
 EP-001 Production
 ✅ Storyboard             — v1 canon-aligned, PASSED WITH MINOR COMMENTS
-✅ Interactive Storyboard — HTML player (internal review tool)
+✅ Storyboard Player      — HTML (internal review tool), under storyboard/player/
 🟡 Animatic v1 (real frames) — IN REVIEW; human scratch voice + final playback outstanding
 ⬜ Children Test          — not started
 ⬜ OBS                    — not started
@@ -126,12 +130,3 @@ Story ✅ → Storyboard ✅ → Animatic Review (in review) → Children Test �
 
 - `README.md` (root) is **stale**: it lists the next step as `ART-001.001 — Eye Research`.
 - `tmp_test_commit.md` at repo root appears to be a leftover test artifact and can be removed if approved.
-
----
-
-## Roles (by function, not by tool)
-
-- **Creator & Producer / Studio Founder** — direction, final authority.
-- **Creative Director** — owns Quality Gates; only role that marks a gate Passed.
-- **Production Director** — produces artifacts, moves the pipeline, sets gates to Waiting/Blocked, commits work. Never marks a gate Passed; never edits frozen canon.
-- **Children Test / OBS** — validates the experience; the only thing that can justify reopening frozen canon.
