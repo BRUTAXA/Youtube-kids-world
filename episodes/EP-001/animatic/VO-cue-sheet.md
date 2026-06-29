@@ -3,14 +3,31 @@
 Read these lines **to picture**, plainly — not acted, not perfect, just a warm human voice
 reading. Record against the mp4; keep the three pause beats silent for the child to answer.
 
+**No narrator.** The child meets Max the way children meet each other — through play, not
+introduction. (Creative Director decision, 2026-06-29.)
+
+## Performance notes (derived from AKS-003 Character Bible)
+
+**Max** — "big friend": calm, warm, reliable (not a teacher, not a show-off). Unhurried
+pace, short concrete phrases, quiet genuine surprise. Slightly lower in the child range.
+
+**Eva** — bright, quick, curious: leads and invites softly, never commands. Normal speech,
+sing-song only on play-words ("ням-ням", "носочный гномик"). Higher and lighter than Max.
+
+**Contrast** — slow/warm Max ↔ fast/bright Eva. This IS their character as a pair.
+
+_Voice never explains. Voice lives._
+
+---
+
 | # | In | Out | Voice |
 |---|------|------|-------|
-| 1 | 0:00 | 0:18 | Песня: «Доброе утро, Лума! Как же хорошо!» · Рассказчик: «Это Макс.» |
+| 1 | 0:00 | 0:18 | Песня: «Доброе утро, Лума! Как же хорошо!» |
 | 2 | 0:18 | 0:35 | Макс: «Лови! Оп! Оп!» |
 | 3 | 0:35 | 0:55 | Макс: «Ой...» (звук «прыг», затем тишина) |
 | 4 | 0:55 | 1:15 | Макс: «Где мячик? Под кубиками? Нету... За книжками? Нету...» |
 | 5 | 1:15 | 1:35 | Ева: «Привет, Макс! ...Ой. А где у тебя пол?» |
-| 6 | 1:35 | 1:50 | Макс: «Мячик закатился. И пропал...» Ева: «А давай играть в игру „В домик“? Поможешь нам?» — **ПАУЗА 3с (ждём ребёнка)** |
+| 6 | 1:35 | 1:50 | Макс: «Мячик закатился. И пропал...» Ева: «А давай играть в игру „В домик"? Поможешь нам?» — **ПАУЗА 3с (ждём ребёнка)** |
 | 7 | 1:50 | 2:05 | Ева: «Коробочка с дверцей любит кубики. Ням! Ням!» |
 | 8 | 2:05 | 2:18 | Ева: «А ты умеешь — ням в коробочку? Покажи!» — **ПАУЗА 3с** |
 | 9 | 2:18 | 2:32 | Макс: «В домик!» |
@@ -25,4 +42,4 @@ reading. Record against the mp4; keep the three pause beats silent for the child
 | 18 | 4:35 | 4:40 | (тишина) |
 | 19 | 4:40 | 4:55 | Макс и Ева: «До завтра, Лума!» |
 
-_Lines are taken verbatim from the approved storyboard, which adapts frozen STORY-001._
+_Lines adapted from the approved storyboard (STORY-001). Narrator removed per Creative Director decision._
