@@ -11,48 +11,66 @@ _Last updated: 2026-06-29_
 ## Current Production Stage
 
 - **Current Episode:** EP-001 (Pilot)
-- **Current Focus:** Creative Review of canon EP-001 storyboard v1
-- **Next Milestone:** Storyboard Creative Review → Animatic v1 → Children Test #001
+- **Current Focus:** Animatic v1 (EP-001)
+- **Next Milestone:** Animatic v1 → Animatic Review → Children Test #001
 
 ---
 
 ## Current Quality Gate
 
 ```text
-Gate:    Creative Review (Storyboard EP-001)
-Status:  WAITING FOR REVIEW
+Gate:    Animatic Review (EP-001)
+Status:  IN PROGRESS (Production building Animatic v1)
 Owner:   Creative Director
 ```
 
-Production has created a canon-aligned storyboard v1 and cannot advance to animatic until this gate is reviewed.
-Production must not mark this gate as Passed.
+When Animatic v1 is committed, this gate moves to WAITING (for Creative Director).
+Production never marks a gate Passed.
+
+### Previous gate — Storyboard Creative Review (EP-001)
+
+```text
+Gate:    Creative Review (Storyboard EP-001)
+Status:  PASSED WITH MINOR COMMENTS
+Owner:   Creative Director
+Decided: Creative Director, 2026-06-29
+```
+
+Storyboard v1 is canon-aligned and approved to proceed to animatic, carrying three
+minor comments (see Animatic Notes). No new Creative Review required for those comments;
+they are verified during animatic build.
 
 ---
 
-## Current EP-001 Storyboard Artifact
+## Active EP-001 Artifacts
 
-The active storyboard for EP-001 is now:
-
-- `episodes/EP-001/storyboard/STORY-001-ball-storyboard-v1.md` — **«Куда спрятался мячик?»**
-  - adapts frozen `STORY/STORY-001_Where_Did_The_Ball_Hide.md`;
-  - does not rewrite approved canon;
-  - includes storyboard Quality Gate checklist;
-  - status: **READY FOR CREATIVE REVIEW**.
+- **Story (canon, frozen):** `STORY/STORY-001_Where_Did_The_Ball_Hide.md` — «Куда спрятался мячик?»
+- **Storyboard v1 (passed w/ comments):** `episodes/EP-001/storyboard/STORY-001-ball-storyboard-v1.md`
+- **Animatic v1 (in progress):** `episodes/EP-001/animatic/STORY-001-ball-animatic-v1.html`
+- **Off-canon / non-active:** `episodes/EP-001/storyboard/STORY-LEAF-storyboard-v1.svg` (do not use unless a future DEC reopens canon)
 
 ---
 
-## Resolved Production Blocker
+## Animatic Notes (carried from Creative Review — verify during build)
 
-Previous blocker:
+1. **Scene 4 (Max searches alone, 0:55–1:15):** emotionally needed but risks sagging
+   for ages 2–3. Keep it visually varied (different search spots); trim toward ~15s in
+   the animatic if it drags. Do not cut the beat itself.
+2. **Three to-camera interaction pauses (panels 6, 8, 14):** good for the age, but keep
+   the eye-line soft, not demanding. Confirm live on the animatic.
+3. **First-30-seconds risk is a STORY-001 question, NOT a storyboard fix.** The opening
+   ritual length (0:00–0:18) and the late hook (ball loss at 0:35) come from frozen
+   STORY-001 timecodes. **Do not "speed up" the opening by editing the storyboard — that
+   would rewrite canon through the back door.** Decision: keep canon timing as-is; let
+   **Children Test** measure whether attention holds in the first 30s. Only OBS evidence
+   may justify changing STORY-001.
 
-- Approved frozen canon story: `STORY/STORY-001_Where_Did_The_Ball_Hide.md` — **«Куда спрятался мячик?»**.
-- Existing production storyboard: `episodes/EP-001/storyboard/STORY-LEAF-storyboard-v1.svg` — **«Большой лист»**.
+---
 
-Resolution applied by Production:
+## Resolved Production Blocker (history)
 
-- Option A was executed without changing canon: a new storyboard was built from the frozen ball story.
-- The leaf storyboard remains in the repository as a non-active prior/off-canon artifact.
-- Do not use the leaf storyboard for EP-001 animatic unless a future approved DEC reopens canon.
+- Previous storyboard was off-canon (leaf/rain). Option A executed: a new storyboard was
+  built from frozen STORY-001 (ball) without changing canon. Leaf board kept as non-active.
 
 ---
 
@@ -69,8 +87,8 @@ Foundation / Canon (frozen)
 ✅ STORY-001 Reference Story / Pilot — «Куда спрятался мячик?» (frozen)
 
 EP-001 Production
-🟡 Storyboard       — canon v1 exists; awaiting Creative Review
-⬜ Animatic         — blocked until storyboard gate passes
+✅ Storyboard       — v1 canon-aligned, PASSED WITH MINOR COMMENTS
+🟡 Animatic         — v1 in progress
 ⬜ Children Test    — not started
 ⬜ OBS              — not started
 ⬜ Final            — not started
@@ -81,33 +99,16 @@ EP-001 Production
 ## Pipeline position
 
 ```text
-Story ✅ → Storyboard 🟡(waiting Creative Review) → Animatic → Children Test → OBS → Production
+Story ✅ → Storyboard ✅ → Animatic 🟡(building) → [Animatic Review] → Children Test → OBS → Production
 ```
-
----
-
-## Immediate next action
-
-Creative Review should evaluate:
-
-- whether storyboard v1 faithfully adapts STORY-001;
-- whether Max’s discovery reads visually;
-- whether Eva feels playful rather than corrective;
-- whether “В домик!” feels like a game, not a lesson;
-- whether interaction pauses are usable for ages 2–3;
-- whether the silent final behavior is readable without narration;
-- whether the storyboard is feasible for a small independent studio.
-
-If Creative Review passes, Production may create Animatic v1.
-If Creative Review requests revision, Production must revise storyboard v1 before animatic.
 
 ---
 
 ## Housekeeping notes (non-blocking)
 
 - `README.md` is **stale**: it lists the next step as `ART-001.001 — Eye Research`.
-  It should be updated after the storyboard Creative Review result is known, so README does not jump ahead of the gate.
-- `tmp_test_commit.md` at repo root appears to be a leftover test artifact and can likely be removed if approved.
+  Update it after the Animatic Review result is known, so README does not jump ahead of the gate.
+- `tmp_test_commit.md` at repo root appears to be a leftover test artifact and can be removed if approved.
 
 ---
 
